@@ -44,9 +44,12 @@ module.exports = async function handler(req, res) {
   if (!nombre || !correo || !asunto || !mensaje) {
     return res.status(400).json({ error: "Completa todos los campos." });
   }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
-    return res.status(400).json({ error: "Escribe un correo electrónico válido." });
-  }
+
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+  return res.status(400).json({
+    error: "Escribe un correo electrónico válido."
+  });
+}
 
   const discordPayload = {
     username: "VELORIA PERFUMES",
