@@ -45,12 +45,6 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link cart-nav-link" href="#carrito" aria-label="Ver carrito">
-                        Bolsa <span id="cartCount" class="cart-count">0</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
                     <a class="nav-link" href="javascript.html">Nosotros</a>
                 </li>
 
@@ -91,7 +85,6 @@
             Explora nuestras fragancias y encuentra la esencia
             que mejor representa tu personalidad.
         </p>
-        <a class="text-link header-quiz-link" href="#test-aromas">Descubre tu aroma ideal ↓</a>
 
     </div>
 
@@ -297,48 +290,6 @@
 
 </section>
 
-
-<section class="section cart-section" id="carrito">
-    <div class="container">
-        <div class="section-title">
-            <p>02 · TU SELECCIÓN</p>
-            <h2>Tu bolsa <em>VELORIA.</em></h2>
-            <p class="section-intro">Revisa tus fragancias seleccionadas antes de preparar tu pedido.</p>
-        </div>
-        <div class="cart-panel">
-            <div id="cartItems" class="cart-items" aria-live="polite">
-                <p class="cart-empty">Tu bolsa está esperando una esencia especial.</p>
-            </div>
-            <div class="cart-summary">
-                <div><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div>
-                <button type="button" id="clearCart" class="btn btn-outline-veloria">Vaciar bolsa</button>
-                <button type="button" id="copyOrder" class="btn btn-veloria">Copiar resumen del pedido</button>
-                <p id="cartMessage" class="cart-message" role="status"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section scent-quiz-section" id="test-aromas">
-    <div class="container">
-        <div class="scent-quiz-card">
-            <p class="eyebrow">ENCUENTRA TU FIRMA OLFATIVA</p>
-            <h2>¿Qué aroma va <em>contigo?</em></h2>
-            <p>Responde una pregunta y descubre por dónde empezar tu búsqueda.</p>
-            <form id="scentQuiz">
-                <fieldset>
-                    <legend>¿Qué sensación te gustaría transmitir?</legend>
-                    <label class="scent-option"><input type="radio" name="scentMood" value="floral" required> <span>🌸</span> Elegancia suave y floral</label>
-                    <label class="scent-option"><input type="radio" name="scentMood" value="fresh"> <span>🍋</span> Frescura y energía</label>
-                    <label class="scent-option"><input type="radio" name="scentMood" value="sweet"> <span>🍦</span> Calidez dulce y acogedora</label>
-                    <label class="scent-option"><input type="radio" name="scentMood" value="intense"> <span>🌙</span> Intensidad y misterio</label>
-                </fieldset>
-                <button type="submit" class="btn btn-veloria">Descubrir recomendación</button>
-            </form>
-            <div id="scentResult" class="scent-result" aria-live="polite" hidden></div>
-        </div>
-    </div>
-</section>
 
 <section class="cta-section">
 
