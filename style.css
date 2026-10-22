@@ -950,3 +950,94 @@ code {
     transform: translateY(-2px);
 }
 
+
+
+/* =====================================================
+   VELORIA LUXE · animaciones, carrito y test de aromas
+===================================================== */
+:root {
+    --gold: #C8A96A;
+    --gold-light: #E8D6A7;
+    --veloria-black: #100D13;
+    --veloria-plum: #26152F;
+}
+
+.veloria-navbar {
+    background: rgba(16, 13, 19, .94);
+    border-bottom: 1px solid rgba(200, 169, 106, .35);
+}
+.veloria-navbar .nav-link { color: #F6F0E7 !important; }
+.veloria-navbar .nav-link:hover,
+.veloria-navbar .nav-link.active { color: var(--gold-light) !important; }
+.veloria-navbar .navbar-toggler { border-color: var(--gold); }
+.veloria-navbar .navbar-toggler-icon { filter: invert(1); }
+.theme-button { border-color: rgba(200,169,106,.55); color: var(--gold-light); }
+.language-select { border-color: rgba(200,169,106,.45); }
+.eyebrow, .section-title > p { color: var(--gold); }
+.hero { background-color: var(--veloria-black); }
+.hero .eyebrow { color: var(--gold-light); }
+.hero h1 span, .page-header h1 em, .section-title h2 em,
+.section h2 em, .cta-section h2 em { color: var(--gold-light); }
+.page-header, .cta-section { background: radial-gradient(circle at 85% 20%, #42244D 0, #211329 38%, #100D13 78%); }
+.btn-veloria {
+    background: linear-gradient(135deg, #D7BC7E, #A98543);
+    border-color: var(--gold);
+    color: #171018;
+    border-radius: 3px;
+    box-shadow: 0 8px 24px rgba(200,169,106,.16);
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.btn-veloria:hover { background: linear-gradient(135deg, #E8D6A7, #C8A96A); color: #171018; border-color: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(200,169,106,.25); }
+.btn-outline-veloria { border: 1px solid var(--gold); color: var(--gold-light); background: transparent; border-radius: 3px; padding: 12px 18px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.btn-outline-veloria:hover { background: var(--gold); color: #171018; }
+.product-card { overflow: hidden; border-color: rgba(200,169,106,.24); box-shadow: 0 12px 35px rgba(20,10,25,.06); }
+.product-card:hover { transform: translateY(-8px); border-color: var(--gold); box-shadow: 0 20px 45px rgba(35,17,44,.16); }
+.product-card > img { transition: transform .65s cubic-bezier(.2,.7,.2,1), filter .4s ease; }
+.product-card:hover > img { transform: scale(1.045); filter: saturate(1.06); }
+.product-info > span, .product-info strong { color: #A98543; }
+.product-info h2 { color: var(--text); }
+.add-to-cart { width: 100%; margin-top: 18px; padding: 12px 15px; border: 1px solid var(--gold); background: #171018; color: var(--gold-light); font-size: 10px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase; transition: .25s ease; }
+.add-to-cart:hover { background: var(--gold); color: #171018; }
+.cart-nav-link { display: flex; align-items: center; gap: 7px; }
+.cart-count { display: inline-flex; min-width: 21px; height: 21px; padding: 0 5px; align-items: center; justify-content: center; border-radius: 50%; background: var(--gold); color: #171018; font-size: 10px; }
+.text-link { color: var(--gold); font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.header-quiz-link { display: inline-block; margin-top: 22px; }
+.section-intro { margin-top: -35px; margin-bottom: 28px; color: var(--gray); }
+.cart-section { background: #151018; color: #F6F0E7; }
+.cart-section .section-title h2 { color: #fff; }
+.cart-panel { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(250px, .8fr); border: 1px solid rgba(200,169,106,.32); background: rgba(255,255,255,.025); }
+.cart-items { padding: 26px; min-height: 150px; }
+.cart-empty { color: #BEB4C3; margin: 0; }
+.cart-row { display: grid; grid-template-columns: 1fr auto; gap: 15px; padding: 17px 0; border-bottom: 1px solid rgba(200,169,106,.18); }
+.cart-row:first-child { padding-top: 0; }
+.cart-product-name { color: #fff; font-family: "Cormorant Garamond", serif; font-size: 25px; line-height: 1.2; }
+.cart-product-meta { color: #BEB4C3; font-size: 12px; }
+.cart-row-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
+.qty-button, .remove-item { background: transparent; border: 1px solid rgba(200,169,106,.5); color: var(--gold-light); min-width: 30px; min-height: 30px; }
+.remove-item { padding: 4px 8px; font-size: 11px; }
+.cart-summary { display: flex; flex-direction: column; gap: 14px; padding: 26px; border-left: 1px solid rgba(200,169,106,.25); background: rgba(200,169,106,.055); }
+.cart-summary > div { display: flex; justify-content: space-between; align-items: center; color: #D2C9D6; }
+.cart-summary strong { font-family: "Cormorant Garamond", serif; font-size: 30px; color: var(--gold-light); }
+.cart-message { min-height: 20px; margin: 0; color: var(--gold-light); font-size: 12px; }
+.scent-quiz-section { background: linear-gradient(180deg, #211329, #100D13); }
+.scent-quiz-card { max-width: 850px; margin: auto; padding: clamp(25px, 5vw, 55px); border: 1px solid rgba(200,169,106,.42); background: rgba(255,255,255,.035); color: #F6F0E7; box-shadow: 0 20px 70px rgba(0,0,0,.2); }
+.scent-quiz-card h2 { font-size: clamp(42px, 5vw, 64px); }
+.scent-quiz-card h2 em { color: var(--gold-light); }
+.scent-quiz-card > p:not(.eyebrow) { color: #C9BFCE; }
+.scent-quiz-card fieldset { border: 0; margin: 30px 0; }
+.scent-quiz-card legend { margin-bottom: 15px; color: #fff; font-weight: 600; }
+.scent-option { display: flex; align-items: center; gap: 12px; margin: 10px 0; padding: 15px 18px; border: 1px solid rgba(200,169,106,.22); cursor: pointer; transition: .2s ease; }
+.scent-option:hover, .scent-option:has(input:checked) { border-color: var(--gold); background: rgba(200,169,106,.09); }
+.scent-option input { accent-color: var(--gold); }
+.scent-option span { font-size: 20px; }
+.scent-result { margin-top: 24px; padding: 22px; border-left: 3px solid var(--gold); background: rgba(200,169,106,.08); }
+.scent-result h3 { color: var(--gold-light); margin-bottom: 8px; }
+.scent-result p { color: #DED5E2; margin-bottom: 14px; }
+.reveal-on-scroll { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+.hero .container, .page-header .container { animation: veloria-rise .8s ease both; }
+@keyframes veloria-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 768px) { .cart-panel { grid-template-columns: 1fr; } .cart-summary { border-left: 0; border-top: 1px solid rgba(200,169,106,.25); } .cart-row { grid-template-columns: 1fr; } .cart-row-actions { justify-content: flex-start; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal-on-scroll { opacity: 1; transform: none; } }
+
+
